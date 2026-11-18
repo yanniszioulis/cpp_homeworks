@@ -29,7 +29,7 @@ int main() {
     int no_of_guesses = 0;
     while (!guessed_correctly) {
         int guess{};
-        cout << "Please provide the next guess:"s << std::endl;
+        cout << "Please provide the next guess:"s;
         cin >> guess;
         no_of_guesses++;
         if (guess > secret_number) {
