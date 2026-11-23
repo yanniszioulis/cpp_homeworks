@@ -36,7 +36,7 @@ int main() {
     cin >> adjective_2;
 
     const std::array adjectives{adjective_1, adjective_2};
-    
+
     cout << "\nHere is your description:"s << std::endl;
-    cout << name << ", the "s << adjectives.at(name.size() % 2) << " "s << noun_map.at(born_season) << " that "s << endings.at(name.size() % 3) << std::endl;
+    cout << name << ", the "s << adjectives.at(name.size() % adjectives.size()) << " "s << noun_map.at(born_season) << " that "s << endings.at(name.size() % endings.size()) << std::endl;
 }
