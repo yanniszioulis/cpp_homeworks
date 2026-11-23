@@ -3,15 +3,15 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Example program that trims strings." << std::endl;
+  std::cout << "Example program that trims strings." << std::endl;
 
-    std::string str;
-    std::cout << "Please enter a string:" << std::endl;
-    std::getline(std::cin, str);
+  std::string str;
+  std::cout << "Please enter a string:" << std::endl;
+  std::getline(std::cin, str);
 
-    const auto trimmed = no_strings_attached::Trim(str);
+  const auto trimmed = no_strings_attached::Trim(str);
 
-    std::cout << "Your trimmed string: '" << trimmed << "'" <<std::endl;
-    
-    return 0;
+  std::cout << "Your trimmed string: '" << trimmed << "'" << std::endl;
+
+  return 0;
 }
